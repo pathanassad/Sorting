@@ -17,7 +17,16 @@ public static void main(String[] args){
     int[] result2 = r2.sort(arr);
     System.out.println(Arrays.toString(result2));
 
+    System.out.println("****************************");
+    System.out.println("Insertion Sort");
+    Insertion r3 = new Insertion();
+    int[] result3 = r3.sort(arr);
+    System.out.println(Arrays.toString(result3));
 
+    System.out.println("****************************");
+    System.out.println("Merge Sort");
+    Merge.mergeSort(arr, 0, arr.length - 1);
+    System.out.println(Arrays.toString(arr));
 
 }
 }
