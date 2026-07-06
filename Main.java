@@ -8,6 +8,7 @@ public static void main(String[] args){
     System.out.println("Selection Sort");
     int[] arr = {13, 46, 24, 52, 20, 9};
     int[] arr1 = {13, 46, 24, 52, 20, 9};
+    int[] arr2 = {13, 46, 24, 52, 20, 9};
 
     SelectionSort r1 = new SelectionSort();
     int[] result1 = r1.sort(arr);
@@ -35,5 +36,10 @@ public static void main(String[] args){
     BubbleRecursion.bubbleSort(arr1, arr1.length-1, 0);
     System.out.println(Arrays.toString(arr1));
 
+    System.out.println("*****************************");
+    System.out.println("Recursive Insertion sort");
+    RecursiveInsertion r4 = new RecursiveInsertion();
+    r4.sort(arr2, 0, 0);
+    System.out.println(Arrays.toString(arr2));
 }
 }
